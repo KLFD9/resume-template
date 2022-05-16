@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,20 +12,27 @@ body {
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: rgb(204, 204, 204);
+      background: rgb(87,87,87);
+      background: radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(0,0,0,0.9448821765034139) 100%);
+      
     }
 
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width:1000px;
     min-height: 100px;
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    box-shadow: 10px 200px 350px 50px rgba(255, 255, 255, 0.7);
 
 }
 
+br {
+    margin: 50px;
+}
 
 /*SECTION MODULE GAUCHE*/
 
@@ -31,24 +40,38 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     padding: 40px;
-    background: #363636;
+    background: #414141;
 }
 
 h3, b{
     text-transform: uppercase;
-    text-align: left;
-    font-weight: 900;
 }
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 
 b{
     font-size: 15px;
 }
 
-hr {
+.sideRight hr {
 
-    border-color: #8f8d8d;
+    border: none;
+    border-top: 2px solid rgb(227, 227, 227);
+    width: 100%;    
+    margin: 40px auto;
+}
+
+.sideLeft hr {
+
+    border: none;
+    border-top: 2px solid rgb(88, 88, 88);
     width: 100%;    
     margin: 40px auto;
 }
@@ -61,38 +84,39 @@ ul{
 
 li {
     list-style: none;
-    font-size: 12px;
+    font-size: 15px;
+    padding: 5px;
 }
 
-li:before {
-    content:".";
-    font-size:80px;
-    vertical-align:left;
-    line-height: 2px;
-}
 
 .profil{
  width: 200px;
  height:200px;
  position: relative;
  border-radius: 50%;
+ overflow: hidden;
  background-color: aqua;
  display: flex;
  margin: 10% auto;
 }
 
-img {
-    display: none;
+.profil .imgbox img {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 140%;
+    object-fit: cover;
 }
 
 .sideLeft, h3, p{
     display: flex;
     color: #fff;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 section.leftRef{
-    line-height: 15px;
+    line-height: 0.5em;
+    
 }
 
 .addDetails{
@@ -100,6 +124,8 @@ section.leftRef{
     flex-direction: column;
     line-height: 20px;
 }
+
+
 
 /* ------ FIN SECTION MODULE GAUCHE-------*/
 
@@ -116,21 +142,24 @@ section.leftRef{
     padding: 40px;
 }
 
-
-.sideRight p{
-    color: #363636;
+.sideRight .name p{
+    color: #cdcbcb;
     font-style: italic;
+}
+
+.sideRight .header ul{
+    color: #888888;
 }
 
 .header{
     display: flex;
-    width: 100%;
-    height: 20vh;
+    height: 19vh;
     justify-content: space-between;
     align-items: flex-start;
-
+    padding-top: 5vh;
 
 }
+
 
 .infos ul{
     display: flex;
@@ -139,12 +168,24 @@ section.leftRef{
 }
 
 .sideRight h1{
-    display: flex;
     color: rgb(114, 113, 113);
     padding: 10px 0 5px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 0.8em;
+    font-family: 'Bebas Neue', cursive;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+.sideRight p{
+    color: rgb(114, 113, 113);
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 0.6em;
+    font-family: 'Bebas Neue', cursive;
+    text-align: justify;
+    letter-spacing: 0.33em;
 }
 
 
