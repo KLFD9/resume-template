@@ -61,6 +61,7 @@ h3 {
 }
 
 
+
 b{
     font-size: 15px;
 }
@@ -70,7 +71,7 @@ b{
     border: none;
     border-top: 2px solid rgb(227, 227, 227);
     width: 100%;    
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .sideLeft hr {
@@ -112,14 +113,20 @@ li {
     object-fit: cover;
 }
 
-.sideLeft, h3, p{
+.sideLeft h3 {
+    display: flex;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.sideLeft p {
     display: flex;
     color: #fff;
     padding-bottom: 20px;
 }
 
 section.leftRef{
-    line-height: 0.5em;
+    line-height: 0.7em;
     
 }
 
@@ -155,6 +162,10 @@ section.leftRef{
     color: #888888;
 }
 
+.sideRight p{
+    margin-bottom: 30px;
+}
+
 .header{
     display: flex;
     height: 13vh;
@@ -182,7 +193,7 @@ section.leftRef{
     letter-spacing: 3px;
 }
 
-.sideRight p{
+.sideRight h6{
     color: rgb(114, 113, 113);
     font-size: 1em;
     font-weight: 500;
@@ -190,6 +201,79 @@ section.leftRef{
     font-family: 'Bebas Neue', cursive;
     text-align: justify;
     letter-spacing: 0.33em;
+}
+
+.sideRight {color: #828282;}
+.sideRight p{color: #828282;}
+.sideRight h3{color: #828282;}
+.sideRight ul li{color: #828282}
+
+
+.work .box{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin: 20px 0;
+    
+}
+
+.work .box .dateEntreprise{
+    min-width: 150px;
+}
+
+.work .box .dateEntreprise p{
+    line-height: 15px;
+}
+
+.work .box .dateEntreprise h5{
+    text-transform: uppercase;
+}
+
+.work .box .text h4{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.skills .box h5{
+    text-transform: uppercase;
+}
+.skills .box .progress {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(197, 196, 196);
+}
+
+.skills .box .progress div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(101, 101, 101);
+}
+
+.hobbies ul {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.hobbies i {
+    padding-right: 10px;
+    color: rgb(66, 66, 66);
 }
 
 
@@ -222,10 +306,9 @@ section.leftRef{
 }
 
 h5 {
-    
-    text-shadow: 2px 10px 20px rgb(12, 12, 12);
+    font-size: 1.2em;
+    text-align: left;
 }
-
 
 .gift {
     transform:
